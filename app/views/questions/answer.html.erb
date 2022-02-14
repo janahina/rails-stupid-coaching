@@ -1,3 +1,13 @@
-<%= "the coach:" %>
-<% '/n' %>
-<h1><%=  @answer %></h1>
+<div class="container">
+  <div class="your-message">
+    <h1><%= "You:" %></h1>
+    <h2><%=  params[:message] %></h2>
+  </div>
+
+  <div class="coach-message">
+    <h1><%= "the coach:" %></h1>
+    <h2><%=  @answer %></h2>
+  </div>
+  
+<%= link_to "Ask another question", ask_path %>
+</div>
